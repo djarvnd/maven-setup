@@ -14,3 +14,14 @@ vim apache-tomcat-7.x.x/conf/tomcat-users.xml
 Stop and start the server back
 ./shutdown.sh
 Browse the app manager on http://ip-add:8080
+
+
+Tomcat Titbits
+
+Port : 8080
+Start : bin/startup.sh
+Status : netstat -ntpl | grep 8080
+Status : ps -ef | grep tomcat
+Stop : bin/shutdown.sh
+GUI Role : manager-gui
+Text Role : manager-script
