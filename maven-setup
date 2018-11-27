@@ -1,0 +1,14 @@
+Setting Up Maven
+
+Maven needs Java, So we need to setup Java first then followed by Maven
+yum -y install java-1.8.0 java-1.8.0-devel
+java & javac
+yum -y install maven
+mvn --version
+
+mvn archetype:generate - to generate project templates
+Generate Stand Alone Application
+
+mvn archetype:generate
+			OR
+mvn archetype:generate -DgroupId=com.digi.proj1 -DartifactId=JavaApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
