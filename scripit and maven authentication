@@ -4,3 +4,17 @@ Provide the script manager access, change tomcat-users.xml
 We Need Tomcat - Maven Authentication
 Create settings.xml in local repository and update tomcat credentials
 vi ~/.m2/settings.xml
+<settings>
+   <servers>
+  	 <server>
+  		 <id>TomcatServer</id>
+  		 <username>tomcat1</username>
+  		 <password>tomcat1</password>
+  	 </server>
+   </servers>
+</settings>
+
+To deploy the App use:
+
+mvn tomcat7:deploy
+mvn tomcat7:redeploy
