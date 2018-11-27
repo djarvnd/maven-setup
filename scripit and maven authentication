@@ -1,0 +1,6 @@
+Provide the script manager access, change tomcat-users.xml
+<user username="tomcat1" password="tomcat1" roles="manager-script"/>
+
+We Need Tomcat - Maven Authentication
+Create settings.xml in local repository and update tomcat credentials
+vi ~/.m2/settings.xml
