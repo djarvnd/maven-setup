@@ -1,0 +1,16 @@
+Installation
+
+Download Tomcat
+https://tomcat.apache.org/download-70.cgi
+
+Extract the tar
+tar xf apache-tomcat-7.x.x.tar.gz
+cd apache-tomcat-7.0.82/bin
+./startup.sh
+Browse the app manager on http://ip-add:8080
+Update the credentials in tomcat-users.xml
+vim apache-tomcat-7.x.x/conf/tomcat-users.xml
+<user username="tomcat" password="tomcat" roles="manager-gui"/>
+Stop and start the server back
+./shutdown.sh
+Browse the app manager on http://ip-add:8080
